@@ -45,7 +45,6 @@ Encore
   .addPlugin(new CopyWebpackPlugin([
     'static/demo.cast',
     'src/assets/favicon.ico',
-    'src/404.html',
   ]))
   .addPlugin(new RobotstxtPlugin({
     policy: [

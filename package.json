@@ -9,7 +9,8 @@
     "dev": "encore dev",
     "watch": "encore dev --watch",
     "build": "encore production",
-    "server": "encore dev-server --disable-host-check"
+    "server": "encore dev-server --disable-host-check",
+    "deploy": "./node_modules/gh-pages/bin/gh-pages.js -d dist --branch master --message \"Update doc\" --repo https://github.com/adpeyre/adpeyre.github.io.git"
   },
   "dependencies": {
     "create-react-class": "^15.6.3",
@@ -54,6 +55,7 @@
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.6.1",
+    "gh-pages": "^2.0.1",
     "html-webpack-plugin": "^2.30.1",
     "node-notifier": "^5.1.2",
     "node-sass": "^4.9.0",
